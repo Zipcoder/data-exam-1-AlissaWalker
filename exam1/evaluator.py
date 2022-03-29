@@ -49,8 +49,7 @@ def compare_two_numbers(a: N, b: N) -> int:
     :param b: The second number.
     :return: an integer 0, 1, or -1
     """
-    # a.sort()
-    # b.sort()
+
     if a < b:
         return -1
     else:
@@ -72,14 +71,14 @@ def compare_two_strings(a: str, b: str) -> int:
     :param b: The second string.
     :return: an integer 0, 1, or -1
     """
-    # for a in
-    # if len(a) == len(b):
-    #     return 0
-    # elif (len(a) > len(b)):
-    #     return 1
-    # else:
-    #     return -1
-    pass
+
+    if len(a) > len(b):
+        return 1
+    elif len(b) > len(a):
+        return -1
+    else:
+        return 0
+
 
 
 def find_common(tuple_a: Tuple, tuple_b: Tuple) -> Set:
