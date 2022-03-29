@@ -80,7 +80,6 @@ def compare_two_strings(a: str, b: str) -> int:
         return 0
 
 
-
 def find_common(tuple_a: Tuple, tuple_b: Tuple) -> Set:
     """
     Given two tuples, this function returns a set containing items common in both tuples.
@@ -102,4 +101,5 @@ def find_duplicates(tuple_in: Tuple) -> List:
     :param tuple_in: A tuple
     :return: a A list containing duplicate items in the tuple_in parameter
     """
+
     pass  # implement me
