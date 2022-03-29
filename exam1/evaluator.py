@@ -49,8 +49,16 @@ def compare_two_numbers(a: N, b: N) -> int:
     :param b: The second number.
     :return: an integer 0, 1, or -1
     """
-    pass  # implement me
-
+    # a.sort()
+    # b.sort()
+    # if a == b:
+    #     return 0
+    # else:
+    #     if a <= b:
+    #         return -1
+    #     else:
+    #         return 1
+    pass
 
 def compare_two_strings(a: str, b: str) -> int:
     """
@@ -64,7 +72,13 @@ def compare_two_strings(a: str, b: str) -> int:
     :param b: The second string.
     :return: an integer 0, 1, or -1
     """
-    pass  # implement me
+    # if (len(a) == len(b)):
+    #     return 0
+    # elif (len(a) > len(b)):
+    #     return 1
+    # else:
+    #     return -1
+    pass
 
 
 def find_common(tuple_a: Tuple, tuple_b: Tuple) -> Set:
@@ -75,7 +89,14 @@ def find_common(tuple_a: Tuple, tuple_b: Tuple) -> Set:
     :param tuple_b: The second tuple.
     :return: A set containing items common on both tuples.
     """
-    pass  # implement me
+    tuple_a = sorted(tuple_a)
+    tuple_b = sorted(tuple_b)
+    t3 = set([])
+    for i in tuple_a:
+        for j in tuple_b:
+            if i == j:
+                t3.add(i)
+        return t3
 
 
 def find_duplicates(tuple_in: Tuple) -> List:
